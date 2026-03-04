@@ -25,8 +25,8 @@
 -- NAME
 -- Jack
 
-CREATE DATABASE animal_shelter;
-USE animal_shelter;
+CREATE DATABASE sqlPractice;
+USE sqlPractice;
 
 CREATE TABLE ANIMAL_INS (
     ANIMAL_ID VARCHAR(20) NOT NULL,
@@ -46,6 +46,6 @@ VALUES
 ('A403564', 'Dog', '2013-11-18 17:03:00', 'Normal', 'Anna', 'Spayed Female');
 
 SELECT NAME
-FROM animal_shelter.ANIMAL_INS
+FROM sqlPractice.ANIMAL_INS
 ORDER BY DATETIME ASC
 LIMIT 1;
