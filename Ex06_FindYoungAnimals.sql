@@ -36,14 +36,14 @@ CREATE TABLE ANIMAL_INS2(
     DATETIME DATETIME NOT NULL,
     INTAKE_CONDITION VARCHAR(10) NOT NULL,
     NAME VARCHAR(10),
-    SEX_UPON_INTAKE VARCHAR(10) NOT NULL
+    SEX_UPON_INTAKE VARCHAR(20) NOT NULL
 );
 
 INSERT INTO ANIMAL_INS2(ANIMAL_ID, ANIMAL_TYPE, DATETIME, INTAKE_CONDITION, NAME, SEX_UPON_INTAKE)
-VALUES ('A365172', 'Dog', '2014-08-26 12:53:00', 'Normal', 'Diablo', 'Neutered Male')
-       ('A367012', 'Dog', '2015-09-16 09:06:00', 'Sick', 'Miller', 'Neutered Male')
-       ('A365302', 'Dog', '2017-01-08 16:34:00', 'Aged', 'Minnie', 'Spayed Female')
-       ('A381217', 'Dog', '2017-07-08 09:41:00', 'Sick', 'Minnie', 'Neutered Male')
+VALUES ('A365172', 'Dog', '2014-08-26 12:53:00', 'Normal', 'Diablo', 'Neutered Male'),
+       ('A367012', 'Dog', '2015-09-16 09:06:00', 'Sick', 'Miller', 'Neutered Male'),
+       ('A365302', 'Dog', '2017-01-08 16:34:00', 'Aged', 'Minnie', 'Spayed Female'),
+       ('A381217', 'Dog', '2017-07-08 09:41:00', 'Sick', 'Minnie', 'Neutered Male');
 
 SELECT ANIMAL_ID, NAME
 FROM sqlpractice.ANIMAL_INS2
