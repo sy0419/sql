@@ -37,4 +37,9 @@ CREATE TABLE ANIMAL_INS6 (ANIMAL_ID VARCHAR(10) NOT NULL,
 INSERT INTO ANIMAL_INS6 (ANIMAL_ID, ANIMAL_TYPE, DATETIME, INTAKE_CONDITION, NAME, SEX_UPON_INTAKE)
 VALUES ('A368930', 'Dog', '2014-06-08 13:20:00', 'Normal', NULL, 'Spayed Female'),
        ('A524634', 'Dog', '2015-01-02 18:54:00', 'Normal', 'Belle', 'Intact Female'),
-       ('A465637', 'Dog', '2017-06-04 08:17:00', 'Injured', 'Commander', 'Neutered Male'),
+       ('A465637', 'Dog', '2017-06-04 08:17:00', 'Injured', 'Commander', 'Neutered Male');
+
+SELECT ANIMAL_ID
+FROM ANIMAL_INS6
+WHERE NAME IS NULL
+ORDER BY ANIMAL_ID ASC;
