@@ -1,7 +1,7 @@
 -- 가장 비싼 상품 구하기
+
 -- 다음은 어느 의류 쇼핑몰에서 판매 중인 상품들의 정보를 담은 PRODUCT 테이블입니다. 
 -- PRODUCT 테이블은 아래와 같은 구조로 되어있으며, PRODUCT_ID, PRODUCT_CODE, PRICE는 각각 상품 ID, 상품코드, 판매가를 나타냅니다.
-
 -- Column name	   Type	    Nullable
 --  PRODUCT_ID	  INTEGER     FALSE
 -- PRODUCT_CODE	 VARCHAR(8)	  FALSE
@@ -13,15 +13,14 @@
 
 -- 예시
 -- 예를 들어 PRODUCT 테이블이 다음과 같다면
-
 -- PRODUCT_ID	PRODUCT_CODE	PRICE
 -- 1	A1000001	10000
 -- 2	A2000005	9000
 -- 3	C1000006	22000
--- 가장 높은 판매가는 22,000 원 이므로, 다음과 같은 결과가 나와야 합니다.
 
+-- 가장 높은 판매가는 22,000 원 이므로, 다음과 같은 결과가 나와야 합니다.
 -- MAX_PRICE
--- 22000
+--  22000
 USE sqlPractice;
 
 CREATE TABLE PRODUCT1(
